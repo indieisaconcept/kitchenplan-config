@@ -1,0 +1,24 @@
+recipes:
+    mac_os_x:
+        - oh_my_zsh::default
+attributes:
+    oh_my_zsh:
+        theme: robbyrussell
+        plugins:
+            - bower
+            - gem
+            - git
+            - git-extras
+            - npm
+            - nyan
+            - rvm
+            - svn
+            - colorize
+            - last-working-dir
+            - npm
+            - osx
+            - rsync
+            - ruby
+            - sublime
+            - terminalapp
+            - vagrant

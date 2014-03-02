@@ -1,0 +1,49 @@
+groups:
+    - roles/engineering
+    - roles/engineering
+    - custom/terminal/zsh
+recipes:
+    mac_os_x:
+        - sudoalt::default
+        - osxdefaults::dock_do_not_animate_opening_applications_from_the_dock
+        - osxdefaults::dock_enable_spring_loading_for_all_dock_items
+        - osxdefaults::dock_make_dock_icons_of_hidden_applications_translucent
+        - osxdefaults::dock_minimize_to_application
+        - osxdefaults::dock_set_the_icon_size_of_dock_items_to_36_pixels
+        - osxdefaults::dock_show_indicator_lights_for_open_applications_in_the_dock
+        - osxdefaults::dock_remove_the_animation_when_hiding_showing_the_dock
+        - osxdefaults::menu_add_battery_percentage
+        - osxdefaults::menu_show_clock_with_date
+        - osxdefaults::mail_when_searching_do_not_include_trash
+        - osxdefaults::mail_copy_email_addresses_instead_of_names_in_mail
+attributes:
+
+    profile:
+        editor: subl -w
+        aliases:
+            vwork: VAGRANT_ENV_HTTP_PROXY=http://10.0.2.2:8080 VAGRANT_ENV_HTTPS_PROXY=http://10.0.2.2:8080 vdir && vagrant reload && vagrant ssh
+            vhome: VAGRANT_ENV_HTTP_PROXY= VAGRANT_ENV_HTTPS_PROXY= vdir && vagrant reload && vagrant ssh
+
+    oh_my_zsh:
+          sources:
+            - ~/.profile
+
+    osxdefaults:
+        finder:
+            preferred_view_style: Nlsv
+
+    homebrewalt:
+        cask_apps:
+            - adium
+            - mou
+            - iterm2
+            - superduper
+            - sidekick
+            - dropbox
+            - evernote
+            - kaleidoscope
+            - alfred
+            - totalfinder
+            - spotify
+            - secrets
+

@@ -1,0 +1,26 @@
+groups:
+    - roles/people/indieisaconcept
+attributes:
+
+    recipes:
+        osxdefaults::set_computer_name
+
+    git:
+        name: indieisaconcept
+        email: me@indieisaconcept.com
+
+    profile:
+        editor: subl -w
+        aliases:
+            vdir: cd /Users/indieisaconcept/Sites/development/projects/news/git/tcog/tcog-vagrant
+
+    osxdefaults:
+        computername: indieMAC
+
+    authorization:
+        sudo:
+            users:
+                - indieisaconcept
+            passwordless: true
+            include_sudoers_d: true
+

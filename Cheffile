@@ -1,0 +1,24 @@
+site "http://community.opscode.com/api/v1"
+
+# Kitchen plan default
+
+cookbook "homebrewalt",           :github => "kitchenplan/chef-homebrewalt",        :ref => "v1.7"
+cookbook "nodejs",                :github => "kitchenplan/chef-nodejs",             :ref => "v1.1"
+cookbook "sudoalt",               :github => "kitchenplan/chef-sudoalt",            :ref => "v2.4"
+cookbook "dmg",                   :github => "opscode-cookbooks/dmg",               :ref => "v2.1.4"
+
+# Custom forks & cookbooks
+
+cookbook "osxdefaults",           :github => "indieisaconcept/chef-osxdefaults",    :ref => "v1.0"
+cookbook "applications",          :github => "indieisaconcept/chef-applications",   :ref => "v2.0"
+cookbook "dotfiles",              :github => "indieisaconcept/chef-dotfiles",       :ref => "master"
+cookbook "oh_my_zsh",             :github => "indieisaconcept/osx-oh-my-zsh",       :ref => "master"
+
+# If you want to use either rvm or rbenv, uncomment the relevant line:
+#
+# cookbook "rvm",                   :github => "fnichol/chef-rvm",                :ref => "26ad5c043c70ea98855a049fbbacb7ffc5ad73e3"
+# cookbook "rbenv",                 :github => "fnichol/chef-rbenv",              :ref => "9afb4e5da2e6212504a12de3bbbd410cd96100f6"
+#
+# Then, add one of the following to your Kitchenplan config file
+#   - rvm::system
+#   - rbenv::system
