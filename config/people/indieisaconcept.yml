@@ -3,7 +3,8 @@ groups:
 attributes:
 
     recipes:
-        osxdefaults::set_computer_name
+        mac_os_x:
+            osxdefaults::set_computer_name
 
     git:
         name: indieisaconcept
