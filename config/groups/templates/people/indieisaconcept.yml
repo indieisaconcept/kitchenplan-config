@@ -1,5 +1,4 @@
 groups:
-    - templates/roles/engineering/default
     - templates/roles/engineering/frontend
     - templates/application/terminal/zsh
 recipes:

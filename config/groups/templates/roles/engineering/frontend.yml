@@ -1,4 +1,5 @@
 groups:
+    - templates/roles/engineering/default
     - templates/application/browsers
 recipes:
     mac_os_x:
