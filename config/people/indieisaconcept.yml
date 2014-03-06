@@ -4,6 +4,7 @@ groups:
 recipes:
     mac_os_x:
         - osxdefaults::set_computer_name
+        - osxdefaults::set_desktop_wallpaper
 
 attributes:
 
@@ -13,3 +14,4 @@ attributes:
 
     osxdefaults:
         computername: indieisaconcept
+        desktop_wallpaper: http://downloadwallpaperhd.com/wp-content/uploads/2013/02/Grumpy-Cat-in-Space.jpg
