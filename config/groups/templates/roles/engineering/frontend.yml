@@ -1,0 +1,13 @@
+groups:
+    - templates/applications/browsers
+recipes:
+    mac_os_x:
+        - nodejs::default
+
+attributes:
+    nodejs:
+        apps:
+            - yo
+            - bower
+            - grunt
+            - grunt-cli

@@ -2,5 +2,6 @@ site "http://community.opscode.com/api/v1"
 
 # Custom forks & cookbooks
 
-cookbook "dotfiles",              :github => "indieisaconcept/chef-dotfiles",       :ref => "master"
-cookbook "oh_my_zsh",             :github => "indieisaconcept/osx-oh-my-zsh",       :ref => "master"
+cookbook "osxdefaults", :github => "indieisaconcept/chef-osxdefaults",  :ref => "custom"
+cookbook "dotfiles",    :github => "indieisaconcept/chef-dotfiles",     :ref => "master"
+cookbook "oh_my_zsh",   :github => "indieisaconcept/osx-oh-my-zsh",     :ref => "master"

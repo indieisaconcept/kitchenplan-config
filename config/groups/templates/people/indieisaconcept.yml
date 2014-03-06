@@ -1,0 +1,46 @@
+groups:
+    - templates/roles/engineering/default
+    - templates/roles/engineering/frontend
+    - templates/application/terminal/zsh
+recipes:
+    mac_os_x:
+        - sudoalt::default
+attributes:
+
+    git:
+        name: Jonathan Barnett
+
+    profile:
+        editor: subl -w
+        aliases:
+            vdir: cd /Users/#{node['current_user']}/Sites/development/projects/news/git/tcog/tcog-vagrant
+            vwork: VAGRANT_ENV_HTTP_PROXY=http://10.0.2.2:8080 VAGRANT_ENV_HTTPS_PROXY=http://10.0.2.2:8080 vdir && vagrant reload && vagrant ssh
+            vhome: VAGRANT_ENV_HTTP_PROXY= VAGRANT_ENV_HTTPS_PROXY= vdir && vagrant reload && vagrant ssh
+
+    oh_my_zsh:
+          sources:
+            - ~/.profile
+
+    authorization:
+        sudo:
+            users:
+                - #{node['current_user']}
+            passwordless: true
+            include_sudoers_d: true
+
+    homebrewalt:
+        cask_apps:
+            - adium
+            - mou
+            - iterm2
+            - superduper
+            - sidekick
+            - dropbox
+            - evernote
+            - kaleidoscope
+            - alfred
+            - totalfinder
+            - spotify
+            - secrets
+            - sublime-text3
+

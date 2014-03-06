@@ -1,0 +1,36 @@
+recipes:
+    global:
+        - dotfiles::gitconfig
+        - dotfiles::profile
+        - applications::ssh_config
+    mac_os_x:
+        - applications::launchrocket
+        - applications::svgo
+        - applications::gnu-tar
+
+attributes:
+    homebrewalt:
+        apps:
+            - git
+            - git-extras
+            - wget
+            - pwgen
+            - pv
+            - htop-osx
+            - git-flow
+            - siege
+            - watch
+        cask_apps:
+            - imageoptim
+            - imagealpha
+            - sequel-pro
+            - sourcetree
+            - cocoarestclient
+            - the-unarchiver
+            - gas-mask
+            - cord
+            - hipchat
+            - adobe-air
+            - virtualbox
+            - vagrant
+            - charles
