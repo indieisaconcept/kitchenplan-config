@@ -4,7 +4,7 @@ groups:
 recipes:
     mac_os_x:
         - osxdefaults::set_computer_name
-        - osxdefaults::set_desktop_wallpaper
+        - osxdefaults::set_desktop_picture
 
 attributes:
 
