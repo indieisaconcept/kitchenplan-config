@@ -2,12 +2,14 @@ recipes:
     mac_os_x:
 
         ###############################################################################
-        # General UI/UX                                                               #
+        # General                                                          #
         ###############################################################################
 
         - osxdefaults::disable_auto-correct
         - osxdefaults::automatically_quit_printer_app_once_the_print_jobs_complete
 
+        - osxdefaults::save_to_disk_not_to_iCloud_by_default
+        - osxdefaults::restart_automatically_if_the_computer_freezes
         - osxdefaults::disable_resume_system-wide
         - osxdefaults::disable_gatekeeper
         - osxdefaults::disable_front_row
@@ -19,7 +21,6 @@ recipes:
         - osxdefaults::enable_subpixel_font_rendering_on_non-apple_lcds
         - osxdefaults::save_screenshots_in_png_format
         - osxdefaults::save_screenshots_to_the_desktop
-        - osxdefaults::save_to_disk_not_to_iCloud_by_default
 
         ###############################################################################
         # Menu Bar                                                                    #
@@ -44,6 +45,8 @@ recipes:
         - osxdefaults::finder_disable_the_warning_before_emptying_the_trash
         - osxdefaults::finder_disable_the_warning_when_changing_a_file_extension
         - osxdefaults::finder_search_the_current_folder_by_default
+        - osxdefaults::finder_show_file_extensions
+        - osxdefaults::finder_set_preferred_view_style
         - osxdefaults::disable_disk_image_verification
 
         ###############################################################################
@@ -85,3 +88,4 @@ recipes:
         - osxdefaults::enable_assistive_devices
         - osxdefaults::enable_full_keyboard_access_for_all_controls
         - osxdefaults::tap_to_click
+        - osxdefaults::increase_sound_quality_for_bluetooth_headphones
