@@ -1,7 +1,15 @@
 site "http://community.opscode.com/api/v1"
 
-# Custom forks & cookbooks
+# Default cookbooks
 
-cookbook "osxdefaults", :github => "indieisaconcept/chef-osxdefaults",  :ref => "custom"
-cookbook "dotfiles",    :github => "indieisaconcept/chef-dotfiles",     :ref => "master"
-cookbook "oh_my_zsh",   :github => "indieisaconcept/osx-oh-my-zsh",     :ref => "master"
+cookbook "homebrewalt",             :github => "kitchenplan/chef-homebrewalt",    :ref => "v1.8.1"
+cookbook "nodejs",                  :github => "kitchenplan/chef-nodejs",         :ref => "v1.1"
+cookbook "applications",            :github => "kitchenplan/chef-applications",   :ref => "v2.0.1"
+cookbook "sudoalt",                 :github => "kitchenplan/chef-sudoalt",        :ref => "v2.4"
+cookbook "dmg",                     :github => "opscode-cookbooks/dmg",           :ref => "v2.1.4"
+
+# Custom cookbooks
+
+cookbook "osxdefaults",             :github => "indieisaconcept/chef-osxdefaults",  :ref => "custom"
+cookbook "dotfiles",                :github => "indieisaconcept/chef-dotfiles",     :ref => "master"
+cookbook "oh_my_zsh",               :github => "indieisaconcept/osx-oh-my-zsh",     :ref => "master"
