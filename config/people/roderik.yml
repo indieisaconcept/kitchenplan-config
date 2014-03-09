@@ -1,0 +1,17 @@
+groups:
+    - templates/people/indieisaconcept
+
+recipes:
+    mac_os_x:
+        - osxdefaults::set_computer_name
+        - osxdefaults::set_desktop_picture
+
+attributes:
+
+    git:
+        name: indieisaconcept
+        email: me@indieisaconcept.com
+
+    osxdefaults:
+        computername: indieisaconcept
+        desktop_picture: http://downloadwallpaperhd.com/wp-content/uploads/2013/02/Grumpy-Cat-in-Space.jpg
