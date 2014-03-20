@@ -1,5 +1,5 @@
 groups:
-    - templates/roles/people/indieisaconcept
+    - templates/people/indieisaconcept
 attributes:
 
     git:
