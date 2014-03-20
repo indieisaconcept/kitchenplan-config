@@ -4,10 +4,14 @@ groups:
 recipes:
     mac_os_x:
         - sudoalt::default
+        - osxdefaults::set_desktop_picture
 attributes:
 
     git:
         name: Jonathan Barnett
+        
+    osxdefaults:
+        desktop_picture: http://downloadwallpaperhd.com/wp-content/uploads/2013/02/Grumpy-Cat-in-Space.jpg
 
     profile:
         editor: subl -w
