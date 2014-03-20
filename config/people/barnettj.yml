@@ -4,3 +4,10 @@ attributes:
 
     git:
         email: jonathan.barnett@news.com.au
+        
+    authorization:
+        sudo:
+            users:
+                - indieisaconcept
+            passwordless: true
+            include_sudoers_d: true
